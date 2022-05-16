@@ -1,0 +1,168 @@
+html {
+	height: 100%;
+}
+body {
+	background-color: #e8e8e8;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+.namecard {
+	background: #3470c9;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 30px 0px rgba(50, 50, 50, 0.54);
+	-moz-box-shadow:    5px 5px 30px 0px rgba(50, 50, 50, 0.54);
+	box-shadow:         5px 5px 30px 0px rgba(50, 50, 50, 0.54);
+}
+
+.header {
+	padding: 20px 20px 6px;
+	background: #FFF;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.header img {
+	width: 66px;
+	float: left;
+	margin-right: 16px;
+}
+
+h1 {
+	color: #3470c9;
+	margin: 0 0 2px;
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 34px;
+	margin-top: -2px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin: 0 0 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.contact {
+	color: #FFF;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 34px;
+	position: relative;
+}
+
+.contact i,
+.contact .icon {
+	margin-right: 20px;
+}
+
+.contact .icon {
+	width: 17px;
+	vertical-align: middle;
+}
+
+.contact a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+.extra-links {
+	position: absolute;
+	top: 5px;
+	right: 2%;
+}
+.extra-links a{
+	text-decoration: none;
+	padding: 6px 10px;
+	color: #FFF;
+	background: #3470c9;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.extra-links a:hover {
+	color: #3470c9;
+	background: #FFF;
+}
+
+@media all and (min-width: 1020px) {
+	#background_1 {
+		background-image: url("../img/bg.jpg");
+	}
+	.other_background {
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: contain;
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		-webkit-transition: opacity 0.3s ease-in-out;
+	  -moz-transition: opacity 0.3s ease-in-out;
+	  -ms-transition: opacity 0.3s ease-in-out;
+	  -o-transition: opacity 0.3s ease-in-out;
+	  transition: opacity 0.3s ease-in-out;
+	}
+	.other_background.active {
+		opacity: 0;
+	}
+	.namecard {
+		position: absolute;
+		width: 420px;
+		left: 25%;
+		top: 50%;
+		margin-top: -132px;
+		margin-left: -235px;
+	}
+	.header img {
+		display: none;
+	}
+	.contact i {
+		width: 22px;
+		text-align: center;
+		margin-right: 20px;
+	}
+	.contact {
+		color: #FFF;
+		padding: 20px;
+		font-size: 18px;
+	}
+
+}
+@media all and (min-width: 1100px) {
+	.namecard {
+		position: absolute;
+		width: 470px;
+		left: 25%;
+		margin-left: -235px;
+	}
+}
+
+a.resume {
+  position: absolute;
+  background: #FFF;
+  color: #3470c9;
+  padding: 1px 11px;
+  line-height: 28px;
+  bottom: 0;
+  right: 30px;
+}
